@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  --gap: 1.5rem;
+
+  font: 1em/1.5 system-ui, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+header {
+  display: grid;
+  grid-gap: var(--gap);
+  padding: var(--gap);
+
+  background: #0002;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+button {
+  width: min-content;
+  background: none;
+  border: 0px;
+  margin: -1em;
+  padding: 1em;
+}
+
+svg {
+  aspect-ratio: 1 / 1;
+  display: block;
+  width: var(--gap);
+
+  cursor: pointer;
+}
+
+main {
+  min-height: 100vh;
+
+  & > header {
+    grid-template-columns: auto 1fr;
+  }
+
+  & > div {
+    display: grid;
+    gap: var(--gap);
+    padding: var(--gap);
+  }
+}

@@ -1,0 +1,81 @@
+.Sidebar {
+  --sidebar-width: min(20em, 80dvw);
+
+  timeline-scope: --sidebar-scroll-dismiss;
+  pointer-events: none;
+
+  /* Override [popover] styles */
+  background: unset;
+  border: unset;
+  color: unset;
+  display: block;
+
+  &:where(.Sidebar--active) {
+    --sidebar-visibility: 1;
+    pointer-events: auto;
+
+    @supports (animation-timeline: scroll()) {
+      & > .Sidebar-backdrop {
+        animation: fade-sidebar-backdrop linear both;
+        animation-timeline: --sidebar-scroll-dismiss;
+        animation-range: 0em var(--sidebar-width);
+      }
+    }
+  }
+}
+
+.Sidebar-backdrop {
+  position: fixed;
+  inset: 0;
+  background: #0005; /* 33% transparent black */
+  opacity: 0;
+  pointer-events: none;
+}
+
+.Sidebar-scroller {
+  position: relative;
+  display: grid;
+  grid-template-columns: 100% 100%;
+  width: var(--sidebar-width);
+  translate: -100%;
+
+  overflow-x: scroll;
+  overscroll-behavior: none;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  scroll-timeline: --sidebar-scroll-dismiss x;
+
+  /* A spacer to make the sidebar sheet scrollable */
+  &::after {
+    content: '';
+    scroll-snap-align: end;
+  }
+}
+
+.Sidebar-sheet {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100svh;
+
+  background: #333;
+  color: #fff;
+  overflow-y: auto;
+  scroll-snap-align: start;
+  scrollbar-width: none;
+
+  :where(& > ul > li) {
+    padding: 1em var(--gap);
+    border-top: 1px solid #fff2;
+
+    :where(& > a) {
+      color: inherit;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+}
+
+@keyframes fade-sidebar-backdrop {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}

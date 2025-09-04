@@ -1,0 +1,71 @@
+.App {
+  --sidebar-width: calc(100% - 4.5rem);
+
+  background: #333;
+  display: grid;
+  grid-template-columns: 100%;
+
+  &:where(.App--active) {
+    grid-template-columns: var(--sidebar-width) 100%;
+
+    overflow-x: scroll;
+    overscroll-behavior: none;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+  }
+}
+
+.App-sidebar {
+  display: none;
+  outline: none;
+  position: relative;
+  scroll-snap-align: start;
+  z-index: 1; /* To make shadows work */
+
+  :where(.App--active) > & {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100svh;
+
+    color: #fff;
+    overflow-y: auto;
+    scroll-snap-align: start;
+    scrollbar-width: none;
+
+    :where(& > ul > li) {
+      padding: 1em var(--gap);
+      border-top: 1px solid #fff2;
+
+      :where(& > a) {
+        color: inherit;
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.App-main {
+  background: #fff;
+  scroll-snap-align: start;
+  /* scroll-initial-target: nearest; */
+
+  @supports (animation-timeline: scroll()) {
+    & {
+      animation: fade-sidebar-backdrop linear both;
+      animation-timeline: scroll(x);
+    }
+  }
+}
+
+
+@keyframes fade-sidebar-backdrop {
+  0% {
+    box-shadow: inset 0 -2em 2em rgba(0,0,0,.5);
+    opacity: 0.5;
+  }
+  100% {
+    box-shadow: inset 0 -2em 2em rgba(0,0,0,0);
+    opacity: 1;
+  }
+}

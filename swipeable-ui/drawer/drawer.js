@@ -2,56 +2,45 @@
 const main = document.querySelector('main');
 
 const drawer = document.getElementById('drawer');
-const openDrawerBtn = document.getElementById('drawer-open');
-
+const openBtn = document.getElementById('drawer-open');
 const scroller = drawer.querySelector('.Drawer-scroller');
 const sheet = drawer.querySelector('.Drawer-sheet');
 
 async function openDrawer() {
-  main.inert = true;
-  drawer.inert = false;
-  openDrawerBtn.setAttribute('aria-expanded', 'true');
+  // Promote to the top layer before scrolling.
+  drawer.showPopover();
 
-  // Use smooth scrolling for the drawer slide-in effect.
+  // If the browser doesn't support `scroll-initial-target: nearest` then
+  // programmatically scroll the drawer out of view before scrolling it into
+  // view. Also wait for a double-rAF before continuing to ensure  `scrollTo()`
+  // fully settles before calling `scrollTo()` again below.
+  if (!CSS.supports('scroll-initial-target', 'nearest')) {
+    scroller.scrollTo({left: scroller.offsetWidth});
+    await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+  }
+
+  // Finally smooth scroll so the drawer is fully in view.
   scroller.scrollTo({left: 0, behavior: 'smooth'});
 }
 
 async function closeDrawer() {
-  // Use smooth scrolling for the drawer slide-out effect.
   scroller.scrollTo({left: scroller.offsetWidth, behavior: 'smooth'});
 }
 
 function onDrawerOpened() {
-  // Set focus on the sheet when the drawer finishes opening.
+  main.inert = true;
+  openBtn.setAttribute('aria-expanded', 'true');
   sheet.focus();
 }
 
 function onDrawerClosed() {
+  drawer.hidePopover();
   main.inert = false;
-  drawer.inert = true;
-  openDrawerBtn.setAttribute('aria-expanded', 'false');
-
-  // Reset scroll positions for the next open.
-  scroller.scrollTo({left: scroller.offsetWidth});
-  sheet.scrollTo(0, 0);
+  openBtn.setAttribute('aria-expanded', 'false');
 }
 
 function observeButtonClicks() {
-  openDrawerBtn.addEventListener('click', () => openDrawer());
-}
-
-function observeOpenAndClosedState() {
-  const visibleThreshold = 1 / window.innerWidth; // At least 1px on screen.
-  const observer = new IntersectionObserver((entries) => {
-    const entry = entries.at(-1); // Only the last entry is relevant.
-    if (entry.intersectionRatio < visibleThreshold) {
-      onDrawerClosed();
-    }
-    if (entry.intersectionRatio === 1) {
-      onDrawerOpened();
-    }
-  }, {root: drawer, threshold: [visibleThreshold, 1]});
-  observer.observe(sheet);
+  openBtn.addEventListener('click', () => openDrawer());
 }
 
 function observeLightDismiss() {
@@ -70,21 +59,33 @@ function observeEscKeyDismiss() {
   });
 }
 
+function observeOpenAndClosedState() {
+  const visibleThreshold = 1 / window.innerWidth; // At least 1px on screen.
+  const observer = new IntersectionObserver(
+    (entries) => {
+      const entry = entries.at(-1); // Only the last entry is relevant.
+      if (entry.intersectionRatio < visibleThreshold) {
+        onDrawerClosed();
+      }
+      if (entry.intersectionRatio === 1) {
+        onDrawerOpened();
+      }
+    },
+    {root: drawer, threshold: [visibleThreshold, 1]},
+  );
+  observer.observe(sheet);
+}
+
 // OPTIONAL: scroll-driven animation fallback styles to fade the backdrop
 // in and out as the drawer opens and closes.
 function addScrollAnimationFallback() {
   scroller.addEventListener('scroll', () => {
     const scrollRatio = 1 - scroller.scrollLeft / sheet.offsetWidth;
-    scroller.style.setProperty('--drawer-backdrop', scrollRatio);
+    drawer.style.setProperty('--drawer-backdrop', scrollRatio);
   });
 }
 
 function initDrawer() {
-  drawer.dataset.initialized = true;
-
-  // Start with the drawer in the closed state.
-  onDrawerClosed();
-
   // Register observers and event listeners.
   observeButtonClicks();
   observeLightDismiss();

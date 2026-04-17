@@ -2,14 +2,18 @@
   --drawer-width: min(20em, 80dvw);
   --drawer-backdrop: 0;
 
-  display: none;
-  position: fixed;
-  inset: 0;
+  width: auto;
+  height: auto;
+  background: transparent;
+  border: 0;
+  overflow: visible;
 }
 
-/** Using an `initialized` state avoids FOUC before scroll position is set. */
-.Drawer[data-initialized] {
-  display: block;
+/* The popover's top-layer backdrop, faded in over the page content as the
+   drawer opens. */
+.Drawer::backdrop {
+  background: #000;
+  opacity: calc(var(--drawer-backdrop) / 3);
 }
 
 .Drawer-scroller {
@@ -23,34 +27,11 @@
   scroll-snap-type: x mandatory;
 }
 
-/*
-  Feature detect scroll-driven animations support, otherwise applying the
-  `fade-drawer-backdrop` animation will set `--drawer-backdrop` to `0`.
-*/
-@supports (animation-timeline: scroll()) {
-  .Drawer-scroller {
-    animation: fade-drawer-backdrop linear both;
-    animation-timeline: scroll(self x);
-  }
-
-  @property --drawer-backdrop {
-    syntax: '<number>';
-    inherits: true;
-    initial-value: 0;
-  }
-
-  @keyframes fade-drawer-backdrop {
-    0% { --drawer-backdrop: 1 }
-    100% { --drawer-backdrop: 0 }
-  }
-}
-
-/* A spacer to make the drawer sheet scrollable, doubles as the backdrop. */
+/* A spacer to make the drawer sheet scrollable. */
 .Drawer-scroller::after {
   content: '';
   scroll-snap-align: end;
-  background: #000;
-  opacity: calc(var(--drawer-backdrop) / 3);
+  scroll-initial-target: nearest;
 }
 
 .Drawer-sheet {
@@ -65,4 +46,31 @@
   scrollbar-width: none;
 
   box-shadow: 0 0 2em rgba(0, 0, 0, calc(var(--drawer-backdrop) / 2));
+}
+
+/*
+  Feature detect scroll-driven animations support, otherwise applying the
+  `fade-drawer-backdrop` animation will set `--drawer-backdrop` to `0`.
+*/
+@supports (animation-timeline: scroll()) {
+  .Drawer {
+    timeline-scope: --drawer-fade;
+    animation: fade-drawer-backdrop linear both;
+    animation-timeline: --drawer-fade;
+  }
+
+  .Drawer-scroller {
+    scroll-timeline: --drawer-fade x;
+  }
+
+  @property --drawer-backdrop {
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+  }
+
+  @keyframes fade-drawer-backdrop {
+    0% { --drawer-backdrop: 1 }
+    100% { --drawer-backdrop: 0 }
+  }
 }

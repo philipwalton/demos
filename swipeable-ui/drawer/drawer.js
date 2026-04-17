@@ -1,58 +1,70 @@
 // DOM element references.
-const drawer = document.querySelector('.Drawer');
-const scroller = document.querySelector('.Drawer-scroller');
-const sheet = document.querySelector('.Drawer-sheet');
+const main = document.querySelector('main');
+
+const drawer = document.getElementById('drawer');
 const openDrawerBtn = document.getElementById('drawer-open');
 
-let isOpen = false;
+const scroller = drawer.querySelector('.Drawer-scroller');
+const sheet = drawer.querySelector('.Drawer-sheet');
 
 async function openDrawer() {
-  drawer.classList.add('Drawer--active');
+  main.inert = true;
+  drawer.inert = false;
+  openDrawerBtn.setAttribute('aria-expanded', 'true');
 
-  // Set initial scroll state, where the sidebar is offscreen.
-  scroller.scrollTo({left: scroller.offsetWidth});
-  sheet.scrollTo(0, 0);
-
-  // Then smoothly scroll the sidebar into view.
-  requestAnimationFrame(() => {
-    scroller.scrollTo({left: 0, behavior: 'smooth'});
-  });
+  // Use smooth scrolling for the drawer slide-in effect.
+  scroller.scrollTo({left: 0, behavior: 'smooth'});
 }
 
 async function closeDrawer() {
-  requestAnimationFrame(() => {
-    scroller.scrollTo({left: scroller.offsetWidth, behavior: 'smooth'});
-  });
+  // Use smooth scrolling for the drawer slide-out effect.
+  scroller.scrollTo({left: scroller.offsetWidth, behavior: 'smooth'});
 }
 
-function handleOpen() {
-  openDrawerBtn.addEventListener('click', () => {
-    if (!isOpen) {
-      openDrawer();
-    }
-  });
+function onDrawerOpened() {
+  // Set focus on the sheet when the drawer finishes opening.
+  sheet.focus();
 }
 
-function handleSwipeDismiss() {
-  const visibleThreshold = 1 / window.innerWidth; // At lest 1px on screen.
+function onDrawerClosed() {
+  main.inert = false;
+  drawer.inert = true;
+  openDrawerBtn.setAttribute('aria-expanded', 'false');
+
+  // Reset scroll positions for the next open.
+  scroller.scrollTo({left: scroller.offsetWidth});
+  sheet.scrollTo(0, 0);
+}
+
+function observeButtonClicks() {
+  openDrawerBtn.addEventListener('click', () => openDrawer());
+}
+
+function observeOpenAndClosedState() {
+  const visibleThreshold = 1 / window.innerWidth; // At least 1px on screen.
   const observer = new IntersectionObserver((entries) => {
     const entry = entries.at(-1); // Only the last entry is relevant.
-    if (isOpen && entry.intersectionRatio < visibleThreshold) {
-      document.body.style.setProperty('overflow', '');
-      drawer.classList.remove('Drawer--active');
-      isOpen = false;
+    if (entry.intersectionRatio < visibleThreshold) {
+      onDrawerClosed();
     }
     if (entry.intersectionRatio === 1) {
-      drawer.focus();
-      isOpen = true;
+      onDrawerOpened();
     }
   }, {root: drawer, threshold: [visibleThreshold, 1]});
   observer.observe(sheet);
 }
 
-function handleLightDismiss() {
+function observeLightDismiss() {
   drawer.addEventListener('click', async (event) => {
-    if (isOpen && !sheet.contains(event.target)) {
+    if (!sheet.contains(event.target)) {
+      closeDrawer();
+    }
+  });
+}
+
+function observeEscKeyDismiss() {
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
       closeDrawer();
     }
   });
@@ -61,26 +73,29 @@ function handleLightDismiss() {
 // OPTIONAL: scroll-driven animation fallback styles to fade the backdrop
 // in and out as the drawer opens and closes.
 function addScrollAnimationFallback() {
-  scroller.addEventListener('scroll', (event) => {
+  scroller.addEventListener('scroll', () => {
     const scrollRatio = 1 - scroller.scrollLeft / sheet.offsetWidth;
-    sheet.style.setProperty('--backdrop', scrollRatio);
-  }, {passive: true});
+    scroller.style.setProperty('--drawer-backdrop', scrollRatio);
+  });
 }
 
 function initDrawer() {
-  handleOpen();
-  handleSwipeDismiss();
-  handleLightDismiss();
+  drawer.dataset.initialized = true;
+
+  // Start with the drawer in the closed state.
+  onDrawerClosed();
+
+  // Register observers and event listeners.
+  observeButtonClicks();
+  observeLightDismiss();
+  observeEscKeyDismiss();
+  observeOpenAndClosedState();
 
   // Conditionally add a fallback in the browser doesn't support
   // scroll animations to get the backdrop fade effect while scrolling.
-  if (true || !CSS.supports('animation-timeline: scroll()')) {
+  if (!CSS.supports('animation-timeline: scroll()')) {
     addScrollAnimationFallback();
   }
-
-  // IMPORTANT! This demo does not implement logic to dismiss the sidebar
-  // when it loses focus or when pressing the ESC key. These are important
-  // behaviors to implement, but they're omitted here to keep things simple.
 }
 
 initDrawer();

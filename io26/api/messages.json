@@ -1,0 +1,902 @@
+[
+  {
+    "id": "msg_6puw34vup",
+    "senderName": "Richard Jones",
+    "initial": "R",
+    "subject": "Action Required: Account Verification",
+    "preview": "Please join us for a sync to discuss the upcoming design changes and timeline.",
+    "timestamp": "2026-05-16T22:28:05.496Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_3wsf1xkt5",
+    "senderName": "Susan Martinez",
+    "initial": "S",
+    "subject": "Action Required: Account Verification",
+    "preview": "Hi there, I wanted to follow up on our previous conversation regarding the project...",
+    "timestamp": "2026-05-16T21:37:05.692Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_xdbal6vym",
+    "senderName": "Michael Jones",
+    "initial": "M",
+    "subject": "Invoice #9921 for Services",
+    "preview": "Here are the top tech trends to watch this week, including AI advancements...",
+    "timestamp": "2026-05-16T21:01:20.463Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_9dav1vekk",
+    "senderName": "Elizabeth Jones",
+    "initial": "E",
+    "subject": "Your recent order #10294",
+    "preview": "Are we still on for lunch at noon? I found a new place we could try out.",
+    "timestamp": "2026-05-16T20:25:34.959Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_hpezid2c7",
+    "senderName": "William Garcia",
+    "initial": "W",
+    "subject": "Your recent order #10294",
+    "preview": "Your vacation request for next week has been approved. Have a great time!",
+    "timestamp": "2026-05-16T19:43:28.998Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_1uar08nao",
+    "senderName": "John Johnson",
+    "initial": "J",
+    "subject": "Lunch today?",
+    "preview": "Please find attached the invoice for last month's services. Payment is due in 30 days.",
+    "timestamp": "2026-05-16T18:46:43.444Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_4lnbxzik8",
+    "senderName": "Jennifer Smith",
+    "initial": "J",
+    "subject": "Re: Vacation Request",
+    "preview": "Are we still on for lunch at noon? I found a new place we could try out.",
+    "timestamp": "2026-05-16T18:10:15.206Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_xgfatqof8",
+    "senderName": "Richard Miller",
+    "initial": "R",
+    "subject": "Your recent order #10294",
+    "preview": "Your vacation request for next week has been approved. Have a great time!",
+    "timestamp": "2026-05-16T17:24:21.319Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_ygjd3ftlg",
+    "senderName": "Robert Jones",
+    "initial": "R",
+    "subject": "Happy Birthday!",
+    "preview": "Are we still on for lunch at noon? I found a new place we could try out.",
+    "timestamp": "2026-05-16T16:34:25.935Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_jwwizns35",
+    "senderName": "James Brown",
+    "initial": "J",
+    "subject": "Happy Birthday!",
+    "preview": "Please join us for a sync to discuss the upcoming design changes and timeline.",
+    "timestamp": "2026-05-16T15:40:42.683Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_uxkzvent1",
+    "senderName": "Jessica Williams",
+    "initial": "J",
+    "subject": "Invoice #9921 for Services",
+    "preview": "Here are the top tech trends to watch this week, including AI advancements...",
+    "timestamp": "2026-05-16T15:13:27.376Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_dwl3zpjr5",
+    "senderName": "Elizabeth Williams",
+    "initial": "E",
+    "subject": "Invoice #9921 for Services",
+    "preview": "Attached are the notes from yesterday's strategy meeting. Let me know if I missed anything.",
+    "timestamp": "2026-05-16T14:27:38.671Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_ooup7xgj3",
+    "senderName": "Jennifer Davis",
+    "initial": "J",
+    "subject": "Weekly Newsletter - Tech Trends",
+    "preview": "Please join us for a sync to discuss the upcoming design changes and timeline.",
+    "timestamp": "2026-05-16T13:19:54.611Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_h8d09rwjv",
+    "senderName": "Robert Martinez",
+    "initial": "R",
+    "subject": "Invoice #9921 for Services",
+    "preview": "Attached are the notes from yesterday's strategy meeting. Let me know if I missed anything.",
+    "timestamp": "2026-05-16T12:35:52.512Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_f1w6bxx2b",
+    "senderName": "Barbara Brown",
+    "initial": "B",
+    "subject": "Meeting Notes: Marketing Strategy",
+    "preview": "Your order has shipped! Track your package using the link below to see the status.",
+    "timestamp": "2026-05-16T12:09:36.440Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_usgyalw63",
+    "senderName": "William Johnson",
+    "initial": "W",
+    "subject": "Re: Vacation Request",
+    "preview": "Are we still on for lunch at noon? I found a new place we could try out.",
+    "timestamp": "2026-05-16T11:02:34.348Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_p9gm9zzr8",
+    "senderName": "Susan Brown",
+    "initial": "S",
+    "subject": "Meeting Notes: Marketing Strategy",
+    "preview": "We noticed a new login to your account. If this was you, no further action is needed.",
+    "timestamp": "2026-05-16T10:26:07.864Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_j7zar0pfv",
+    "senderName": "Michael Martinez",
+    "initial": "M",
+    "subject": "Invoice #9921 for Services",
+    "preview": "Are we still on for lunch at noon? I found a new place we could try out.",
+    "timestamp": "2026-05-16T09:54:22.495Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_bo4gf6j41",
+    "senderName": "Joseph Davis",
+    "initial": "J",
+    "subject": "Action Required: Account Verification",
+    "preview": "Here are the top tech trends to watch this week, including AI advancements...",
+    "timestamp": "2026-05-16T09:14:12.488Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_hkjh0fgay",
+    "senderName": "Joseph Brown",
+    "initial": "J",
+    "subject": "Action Required: Account Verification",
+    "preview": "Are we still on for lunch at noon? I found a new place we could try out.",
+    "timestamp": "2026-05-16T08:27:06.449Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_wacjk4sju",
+    "senderName": "William Brown",
+    "initial": "W",
+    "subject": "Your recent order #10294",
+    "preview": "Are we still on for lunch at noon? I found a new place we could try out.",
+    "timestamp": "2026-05-16T07:39:16.442Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_vmhghmkgn",
+    "senderName": "Michael Brown",
+    "initial": "M",
+    "subject": "Invoice #9921 for Services",
+    "preview": "Your order has shipped! Track your package using the link below to see the status.",
+    "timestamp": "2026-05-16T06:58:42.084Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_jqvj6p5dx",
+    "senderName": "Michael Williams",
+    "initial": "M",
+    "subject": "Meeting Notes: Marketing Strategy",
+    "preview": "Are we still on for lunch at noon? I found a new place we could try out.",
+    "timestamp": "2026-05-16T05:54:22.614Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_hwhhsj94p",
+    "senderName": "Richard Smith",
+    "initial": "R",
+    "subject": "Invoice #9921 for Services",
+    "preview": "Your order has shipped! Track your package using the link below to see the status.",
+    "timestamp": "2026-05-16T05:05:30.204Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_4tvut1a9b",
+    "senderName": "Mary Williams",
+    "initial": "M",
+    "subject": "Your recent order #10294",
+    "preview": "Are we still on for lunch at noon? I found a new place we could try out.",
+    "timestamp": "2026-05-16T04:36:52.633Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_52tbkuzz0",
+    "senderName": "Jessica Martinez",
+    "initial": "J",
+    "subject": "Re: Vacation Request",
+    "preview": "Wishing you a fantastic birthday! Hope you have a wonderful day celebrating.",
+    "timestamp": "2026-05-16T03:57:55.109Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_pfkpdwor7",
+    "senderName": "Mary Williams",
+    "initial": "M",
+    "subject": "Re: Vacation Request",
+    "preview": "Your vacation request for next week has been approved. Have a great time!",
+    "timestamp": "2026-05-16T02:48:26.843Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_gyscsaoev",
+    "senderName": "Patricia Garcia",
+    "initial": "P",
+    "subject": "Your recent order #10294",
+    "preview": "Please find attached the invoice for last month's services. Payment is due in 30 days.",
+    "timestamp": "2026-05-16T02:08:55.401Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_nn7utrubc",
+    "senderName": "Jessica Jones",
+    "initial": "J",
+    "subject": "Meeting Notes: Marketing Strategy",
+    "preview": "Here are the top tech trends to watch this week, including AI advancements...",
+    "timestamp": "2026-05-16T01:38:45.313Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_rkaa3vosh",
+    "senderName": "Joseph Davis",
+    "initial": "J",
+    "subject": "Happy Birthday!",
+    "preview": "Wishing you a fantastic birthday! Hope you have a wonderful day celebrating.",
+    "timestamp": "2026-05-16T00:51:14.090Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_8e3dzpqhx",
+    "senderName": "Richard Garcia",
+    "initial": "R",
+    "subject": "Meeting Notes: Marketing Strategy",
+    "preview": "Your vacation request for next week has been approved. Have a great time!",
+    "timestamp": "2026-05-15T23:52:42.636Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_mdssm0h6f",
+    "senderName": "Elizabeth Davis",
+    "initial": "E",
+    "subject": "Invoice #9921 for Services",
+    "preview": "Your vacation request for next week has been approved. Have a great time!",
+    "timestamp": "2026-05-15T23:12:04.233Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_6n2vq0nfx",
+    "senderName": "James Miller",
+    "initial": "J",
+    "subject": "Weekly Newsletter - Tech Trends",
+    "preview": "We noticed a new login to your account. If this was you, no further action is needed.",
+    "timestamp": "2026-05-15T22:20:51.660Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_vv28atp98",
+    "senderName": "Richard Jones",
+    "initial": "R",
+    "subject": "Invitation: Design Sync",
+    "preview": "Please find attached the invoice for last month's services. Payment is due in 30 days.",
+    "timestamp": "2026-05-15T21:42:32.836Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_y73wv2i29",
+    "senderName": "David Smith",
+    "initial": "D",
+    "subject": "Invitation: Design Sync",
+    "preview": "Your vacation request for next week has been approved. Have a great time!",
+    "timestamp": "2026-05-15T21:00:50.594Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_1uunqsgnz",
+    "senderName": "William Miller",
+    "initial": "W",
+    "subject": "Meeting Notes: Marketing Strategy",
+    "preview": "Please find attached the invoice for last month's services. Payment is due in 30 days.",
+    "timestamp": "2026-05-15T20:13:08.991Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_ksnekj5w1",
+    "senderName": "John Davis",
+    "initial": "J",
+    "subject": "Re: Vacation Request",
+    "preview": "Wishing you a fantastic birthday! Hope you have a wonderful day celebrating.",
+    "timestamp": "2026-05-15T19:35:50.163Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_c8gazx8yt",
+    "senderName": "Richard Brown",
+    "initial": "R",
+    "subject": "Meeting Notes: Marketing Strategy",
+    "preview": "Attached are the notes from yesterday's strategy meeting. Let me know if I missed anything.",
+    "timestamp": "2026-05-15T18:31:26.684Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_jddmhaaqi",
+    "senderName": "James Garcia",
+    "initial": "J",
+    "subject": "Action Required: Account Verification",
+    "preview": "Here are the top tech trends to watch this week, including AI advancements...",
+    "timestamp": "2026-05-15T17:56:36.993Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_6qrr0jh9t",
+    "senderName": "Joseph Johnson",
+    "initial": "J",
+    "subject": "Happy Birthday!",
+    "preview": "Are we still on for lunch at noon? I found a new place we could try out.",
+    "timestamp": "2026-05-15T17:08:42.307Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_gp4a3i964",
+    "senderName": "David Smith",
+    "initial": "D",
+    "subject": "Invitation: Design Sync",
+    "preview": "Wishing you a fantastic birthday! Hope you have a wonderful day celebrating.",
+    "timestamp": "2026-05-15T16:30:08.375Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_gmrhh5bze",
+    "senderName": "Joseph Johnson",
+    "initial": "J",
+    "subject": "Action Required: Account Verification",
+    "preview": "Are we still on for lunch at noon? I found a new place we could try out.",
+    "timestamp": "2026-05-15T15:47:36.619Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_krkdzb8id",
+    "senderName": "David Martinez",
+    "initial": "D",
+    "subject": "Lunch today?",
+    "preview": "We noticed a new login to your account. If this was you, no further action is needed.",
+    "timestamp": "2026-05-15T15:06:51.215Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_j0ndah3sv",
+    "senderName": "Mary Garcia",
+    "initial": "M",
+    "subject": "Invoice #9921 for Services",
+    "preview": "Hi there, I wanted to follow up on our previous conversation regarding the project...",
+    "timestamp": "2026-05-15T14:12:09.605Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_kjvpg1pt7",
+    "senderName": "David Garcia",
+    "initial": "D",
+    "subject": "Invitation: Design Sync",
+    "preview": "We noticed a new login to your account. If this was you, no further action is needed.",
+    "timestamp": "2026-05-15T13:22:05.277Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_6ygkn8ekj",
+    "senderName": "Linda Miller",
+    "initial": "L",
+    "subject": "Weekly Newsletter - Tech Trends",
+    "preview": "We noticed a new login to your account. If this was you, no further action is needed.",
+    "timestamp": "2026-05-15T12:54:04.282Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_crpq64w0k",
+    "senderName": "John Johnson",
+    "initial": "J",
+    "subject": "Re: Vacation Request",
+    "preview": "Wishing you a fantastic birthday! Hope you have a wonderful day celebrating.",
+    "timestamp": "2026-05-15T11:58:50.976Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_9s17gtbn3",
+    "senderName": "Susan Miller",
+    "initial": "S",
+    "subject": "Project Update: Q3 Deliverables",
+    "preview": "Please join us for a sync to discuss the upcoming design changes and timeline.",
+    "timestamp": "2026-05-15T11:11:17.238Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_fboikfepp",
+    "senderName": "Patricia Martinez",
+    "initial": "P",
+    "subject": "Your recent order #10294",
+    "preview": "Your vacation request for next week has been approved. Have a great time!",
+    "timestamp": "2026-05-15T10:36:01.104Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_e027ctcl7",
+    "senderName": "Jessica Garcia",
+    "initial": "J",
+    "subject": "Project Update: Q3 Deliverables",
+    "preview": "Are we still on for lunch at noon? I found a new place we could try out.",
+    "timestamp": "2026-05-15T09:52:55.000Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_7uomkxz6b",
+    "senderName": "Jennifer Davis",
+    "initial": "J",
+    "subject": "Weekly Newsletter - Tech Trends",
+    "preview": "Are we still on for lunch at noon? I found a new place we could try out.",
+    "timestamp": "2026-05-15T09:09:03.361Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_b3su7skcq",
+    "senderName": "Susan Williams",
+    "initial": "S",
+    "subject": "Invitation: Design Sync",
+    "preview": "Here are the top tech trends to watch this week, including AI advancements...",
+    "timestamp": "2026-05-15T08:26:20.184Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_2zhr8n9j9",
+    "senderName": "Michael Johnson",
+    "initial": "M",
+    "subject": "Project Update: Q3 Deliverables",
+    "preview": "Are we still on for lunch at noon? I found a new place we could try out.",
+    "timestamp": "2026-05-15T07:26:38.485Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_leqvn4dsc",
+    "senderName": "Jessica Johnson",
+    "initial": "J",
+    "subject": "Weekly Newsletter - Tech Trends",
+    "preview": "Please join us for a sync to discuss the upcoming design changes and timeline.",
+    "timestamp": "2026-05-15T06:40:01.241Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_fodko4ghr",
+    "senderName": "Patricia Miller",
+    "initial": "P",
+    "subject": "Meeting Notes: Marketing Strategy",
+    "preview": "Here are the top tech trends to watch this week, including AI advancements...",
+    "timestamp": "2026-05-15T06:05:16.289Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_bwdccfm39",
+    "senderName": "Richard Brown",
+    "initial": "R",
+    "subject": "Project Update: Q3 Deliverables",
+    "preview": "Hi there, I wanted to follow up on our previous conversation regarding the project...",
+    "timestamp": "2026-05-15T05:01:47.231Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_1s19b3mrf",
+    "senderName": "Robert Smith",
+    "initial": "R",
+    "subject": "Weekly Newsletter - Tech Trends",
+    "preview": "Please find attached the invoice for last month's services. Payment is due in 30 days.",
+    "timestamp": "2026-05-15T04:27:44.070Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_pusc9lv5u",
+    "senderName": "Susan Garcia",
+    "initial": "S",
+    "subject": "Project Update: Q3 Deliverables",
+    "preview": "Wishing you a fantastic birthday! Hope you have a wonderful day celebrating.",
+    "timestamp": "2026-05-15T03:37:20.396Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_ozv387cs7",
+    "senderName": "Jennifer Brown",
+    "initial": "J",
+    "subject": "Happy Birthday!",
+    "preview": "Hi there, I wanted to follow up on our previous conversation regarding the project...",
+    "timestamp": "2026-05-15T02:52:46.212Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_r6iu014au",
+    "senderName": "Richard Garcia",
+    "initial": "R",
+    "subject": "Lunch today?",
+    "preview": "Please join us for a sync to discuss the upcoming design changes and timeline.",
+    "timestamp": "2026-05-15T02:25:53.912Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_3zdl2vqgj",
+    "senderName": "Mary Martinez",
+    "initial": "M",
+    "subject": "Project Update: Q3 Deliverables",
+    "preview": "Please find attached the invoice for last month's services. Payment is due in 30 days.",
+    "timestamp": "2026-05-15T01:31:19.039Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_8djoakqjc",
+    "senderName": "Susan Jones",
+    "initial": "S",
+    "subject": "Meeting Notes: Marketing Strategy",
+    "preview": "Your vacation request for next week has been approved. Have a great time!",
+    "timestamp": "2026-05-15T00:33:26.930Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_lbylriqb1",
+    "senderName": "Jennifer Davis",
+    "initial": "J",
+    "subject": "Invitation: Design Sync",
+    "preview": "Wishing you a fantastic birthday! Hope you have a wonderful day celebrating.",
+    "timestamp": "2026-05-15T00:06:07.758Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_0moujoqwo",
+    "senderName": "Barbara Martinez",
+    "initial": "B",
+    "subject": "Invitation: Design Sync",
+    "preview": "Please find attached the invoice for last month's services. Payment is due in 30 days.",
+    "timestamp": "2026-05-14T23:28:14.174Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_zqfasqigi",
+    "senderName": "Elizabeth Davis",
+    "initial": "E",
+    "subject": "Invitation: Design Sync",
+    "preview": "Wishing you a fantastic birthday! Hope you have a wonderful day celebrating.",
+    "timestamp": "2026-05-14T22:22:13.803Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_538tzfi21",
+    "senderName": "John Jones",
+    "initial": "J",
+    "subject": "Action Required: Account Verification",
+    "preview": "Attached are the notes from yesterday's strategy meeting. Let me know if I missed anything.",
+    "timestamp": "2026-05-14T21:29:32.838Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_n7ch0w0jo",
+    "senderName": "Robert Davis",
+    "initial": "R",
+    "subject": "Re: Vacation Request",
+    "preview": "Wishing you a fantastic birthday! Hope you have a wonderful day celebrating.",
+    "timestamp": "2026-05-14T20:57:47.007Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_az5rbuseo",
+    "senderName": "Jessica Garcia",
+    "initial": "J",
+    "subject": "Lunch today?",
+    "preview": "We noticed a new login to your account. If this was you, no further action is needed.",
+    "timestamp": "2026-05-14T20:18:22.087Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_e8s5fjzax",
+    "senderName": "James Smith",
+    "initial": "J",
+    "subject": "Your recent order #10294",
+    "preview": "Please join us for a sync to discuss the upcoming design changes and timeline.",
+    "timestamp": "2026-05-14T19:43:13.576Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_e56ytuatl",
+    "senderName": "Richard Garcia",
+    "initial": "R",
+    "subject": "Project Update: Q3 Deliverables",
+    "preview": "Attached are the notes from yesterday's strategy meeting. Let me know if I missed anything.",
+    "timestamp": "2026-05-14T18:51:57.298Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_5kl3j38wu",
+    "senderName": "Elizabeth Smith",
+    "initial": "E",
+    "subject": "Project Update: Q3 Deliverables",
+    "preview": "We noticed a new login to your account. If this was you, no further action is needed.",
+    "timestamp": "2026-05-14T17:59:21.480Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_aqrrt141s",
+    "senderName": "Patricia Johnson",
+    "initial": "P",
+    "subject": "Meeting Notes: Marketing Strategy",
+    "preview": "Please find attached the invoice for last month's services. Payment is due in 30 days.",
+    "timestamp": "2026-05-14T17:22:24.654Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_8dnqx44aq",
+    "senderName": "James Jones",
+    "initial": "J",
+    "subject": "Happy Birthday!",
+    "preview": "We noticed a new login to your account. If this was you, no further action is needed.",
+    "timestamp": "2026-05-14T16:23:54.506Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_eusi0hw04",
+    "senderName": "James Martinez",
+    "initial": "J",
+    "subject": "Lunch today?",
+    "preview": "Please join us for a sync to discuss the upcoming design changes and timeline.",
+    "timestamp": "2026-05-14T15:31:03.542Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_dkqwkxiqx",
+    "senderName": "Joseph Brown",
+    "initial": "J",
+    "subject": "Re: Vacation Request",
+    "preview": "Wishing you a fantastic birthday! Hope you have a wonderful day celebrating.",
+    "timestamp": "2026-05-14T14:46:45.510Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_7uvburrv2",
+    "senderName": "Linda Garcia",
+    "initial": "L",
+    "subject": "Invoice #9921 for Services",
+    "preview": "Wishing you a fantastic birthday! Hope you have a wonderful day celebrating.",
+    "timestamp": "2026-05-14T14:20:03.172Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_ahh7qry1f",
+    "senderName": "Patricia Smith",
+    "initial": "P",
+    "subject": "Invoice #9921 for Services",
+    "preview": "Please find attached the invoice for last month's services. Payment is due in 30 days.",
+    "timestamp": "2026-05-14T13:25:57.618Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_kz7pb6dg4",
+    "senderName": "Mary Johnson",
+    "initial": "M",
+    "subject": "Project Update: Q3 Deliverables",
+    "preview": "Hi there, I wanted to follow up on our previous conversation regarding the project...",
+    "timestamp": "2026-05-14T12:50:28.883Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_dio71nepu",
+    "senderName": "Elizabeth Rodriguez",
+    "initial": "E",
+    "subject": "Meeting Notes: Marketing Strategy",
+    "preview": "Please join us for a sync to discuss the upcoming design changes and timeline.",
+    "timestamp": "2026-05-14T11:44:30.043Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_n4ag3077z",
+    "senderName": "James Johnson",
+    "initial": "J",
+    "subject": "Invitation: Design Sync",
+    "preview": "Here are the top tech trends to watch this week, including AI advancements...",
+    "timestamp": "2026-05-14T11:22:28.557Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_hb5f5sr6b",
+    "senderName": "Susan Miller",
+    "initial": "S",
+    "subject": "Happy Birthday!",
+    "preview": "Hi there, I wanted to follow up on our previous conversation regarding the project...",
+    "timestamp": "2026-05-14T10:22:18.960Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_i9czwwz1r",
+    "senderName": "Elizabeth Miller",
+    "initial": "E",
+    "subject": "Re: Vacation Request",
+    "preview": "Please join us for a sync to discuss the upcoming design changes and timeline.",
+    "timestamp": "2026-05-14T09:52:20.798Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_5j4r6dyf2",
+    "senderName": "Joseph Rodriguez",
+    "initial": "J",
+    "subject": "Meeting Notes: Marketing Strategy",
+    "preview": "Hi there, I wanted to follow up on our previous conversation regarding the project...",
+    "timestamp": "2026-05-14T09:06:20.008Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_h4bc9pys5",
+    "senderName": "John Brown",
+    "initial": "J",
+    "subject": "Invitation: Design Sync",
+    "preview": "Please find attached the invoice for last month's services. Payment is due in 30 days.",
+    "timestamp": "2026-05-14T08:00:36.260Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_yjj5sqew0",
+    "senderName": "Susan Smith",
+    "initial": "S",
+    "subject": "Your recent order #10294",
+    "preview": "Please join us for a sync to discuss the upcoming design changes and timeline.",
+    "timestamp": "2026-05-14T07:28:02.875Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_kh40qcmsq",
+    "senderName": "Jennifer Jones",
+    "initial": "J",
+    "subject": "Project Update: Q3 Deliverables",
+    "preview": "Your vacation request for next week has been approved. Have a great time!",
+    "timestamp": "2026-05-14T06:39:42.130Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_pq7f5owm8",
+    "senderName": "Linda Johnson",
+    "initial": "L",
+    "subject": "Invitation: Design Sync",
+    "preview": "Wishing you a fantastic birthday! Hope you have a wonderful day celebrating.",
+    "timestamp": "2026-05-14T05:48:08.462Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_aw27a750s",
+    "senderName": "Patricia Williams",
+    "initial": "P",
+    "subject": "Re: Vacation Request",
+    "preview": "Hi there, I wanted to follow up on our previous conversation regarding the project...",
+    "timestamp": "2026-05-14T05:14:25.776Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_w3yj28mhi",
+    "senderName": "Richard Johnson",
+    "initial": "R",
+    "subject": "Invitation: Design Sync",
+    "preview": "Are we still on for lunch at noon? I found a new place we could try out.",
+    "timestamp": "2026-05-14T04:39:33.040Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_9s6eegqln",
+    "senderName": "Robert Brown",
+    "initial": "R",
+    "subject": "Meeting Notes: Marketing Strategy",
+    "preview": "We noticed a new login to your account. If this was you, no further action is needed.",
+    "timestamp": "2026-05-14T03:59:08.262Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_otbu7nb9z",
+    "senderName": "William Williams",
+    "initial": "W",
+    "subject": "Weekly Newsletter - Tech Trends",
+    "preview": "Please find attached the invoice for last month's services. Payment is due in 30 days.",
+    "timestamp": "2026-05-14T02:44:44.596Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_ghz4djwi5",
+    "senderName": "Mary Williams",
+    "initial": "M",
+    "subject": "Action Required: Account Verification",
+    "preview": "Here are the top tech trends to watch this week, including AI advancements...",
+    "timestamp": "2026-05-14T02:14:09.277Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_u5c074is6",
+    "senderName": "William Martinez",
+    "initial": "W",
+    "subject": "Weekly Newsletter - Tech Trends",
+    "preview": "Are we still on for lunch at noon? I found a new place we could try out.",
+    "timestamp": "2026-05-14T01:29:16.386Z",
+    "isUnread": false
+  },
+  {
+    "id": "msg_bcchf3s22",
+    "senderName": "Jessica Johnson",
+    "initial": "J",
+    "subject": "Lunch today?",
+    "preview": "Hi there, I wanted to follow up on our previous conversation regarding the project...",
+    "timestamp": "2026-05-14T00:32:01.272Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_7gpm9op4f",
+    "senderName": "Susan Davis",
+    "initial": "S",
+    "subject": "Your recent order #10294",
+    "preview": "Please join us for a sync to discuss the upcoming design changes and timeline.",
+    "timestamp": "2026-05-13T23:48:12.008Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_7iik8gcu1",
+    "senderName": "Jennifer Rodriguez",
+    "initial": "J",
+    "subject": "Invitation: Design Sync",
+    "preview": "Wishing you a fantastic birthday! Hope you have a wonderful day celebrating.",
+    "timestamp": "2026-05-13T22:59:52.659Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_ftxtgpc3f",
+    "senderName": "James Miller",
+    "initial": "J",
+    "subject": "Lunch today?",
+    "preview": "Are we still on for lunch at noon? I found a new place we could try out.",
+    "timestamp": "2026-05-13T22:44:25.560Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_t06svvobt",
+    "senderName": "Patricia Miller",
+    "initial": "P",
+    "subject": "Action Required: Account Verification",
+    "preview": "We noticed a new login to your account. If this was you, no further action is needed.",
+    "timestamp": "2026-05-13T21:37:37.538Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_ijpz9xz6v",
+    "senderName": "Jennifer Miller",
+    "initial": "J",
+    "subject": "Invitation: Design Sync",
+    "preview": "Please find attached the invoice for last month's services. Payment is due in 30 days.",
+    "timestamp": "2026-05-13T21:11:30.465Z",
+    "isUnread": true
+  },
+  {
+    "id": "msg_91xc6aqut",
+    "senderName": "Elizabeth Jones",
+    "initial": "E",
+    "subject": "Project Update: Q3 Deliverables",
+    "preview": "Your order has shipped! Track your package using the link below to see the status.",
+    "timestamp": "2026-05-13T20:03:08.411Z",
+    "isUnread": true
+  }
+]

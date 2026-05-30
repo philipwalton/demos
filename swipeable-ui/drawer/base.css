@@ -37,7 +37,7 @@ svg {
 }
 
 main {
-  min-height: 100vh;
+  min-height: 100dvh;
 
   & > header {
     grid-template-columns: auto 1fr;

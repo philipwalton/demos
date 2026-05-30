@@ -13,7 +13,7 @@
    drawer opens. */
 .Drawer::backdrop {
   background: #000;
-  opacity: calc(var(--drawer-backdrop) / 3);
+  opacity: calc(var(--drawer-backdrop) / 2);
 }
 
 .Drawer-scroller {
@@ -25,6 +25,13 @@
   overscroll-behavior: none;
   scrollbar-width: none;
   scroll-snap-type: x mandatory;
+}
+
+/* Animate opening and closing scrolls, unless the user prefers reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+  .Drawer-scroller {
+    scroll-behavior: smooth;
+  }
 }
 
 /* A spacer to make the drawer sheet scrollable. */
@@ -73,4 +80,8 @@
     0% { --drawer-backdrop: 1 }
     100% { --drawer-backdrop: 0 }
   }
+}
+
+html:has(.Drawer:popover-open) {
+  overflow: clip;
 }

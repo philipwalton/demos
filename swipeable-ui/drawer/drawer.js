@@ -15,22 +15,21 @@ async function openDrawer() {
   // view. Also wait for a double-rAF before continuing to ensure  `scrollTo()`
   // fully settles before calling `scrollTo()` again below.
   if (!CSS.supports('scroll-initial-target', 'nearest')) {
-    scroller.scrollTo({left: scroller.offsetWidth});
+    scroller.scrollTo({left: sheet.offsetWidth, behavior: 'instant'});
     await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
   }
 
   // Finally smooth scroll so the drawer is fully in view.
-  scroller.scrollTo({left: 0, behavior: 'smooth'});
+  scroller.scrollTo({left: 0, behavior: 'auto'});
 }
 
-async function closeDrawer() {
-  scroller.scrollTo({left: scroller.offsetWidth, behavior: 'smooth'});
+function closeDrawer() {
+  scroller.scrollTo({left: sheet.offsetWidth, behavior: 'auto'});
 }
 
 function onDrawerOpened() {
   main.inert = true;
-  openBtn.setAttribute('aria-expanded', 'true');
-  sheet.focus();
+  openBtn.setAttribute('aria-expanded', 'true');  
 }
 
 function onDrawerClosed() {
@@ -44,7 +43,7 @@ function observeButtonClicks() {
 }
 
 function observeLightDismiss() {
-  drawer.addEventListener('click', async (event) => {
+  drawer.addEventListener('click', (event) => {
     if (!sheet.contains(event.target)) {
       closeDrawer();
     }

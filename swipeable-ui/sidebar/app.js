@@ -7,14 +7,19 @@ const openSidebarBtn = document.getElementById('sidebar-open');
 let isOpen = false;
 
 
-function openSidebar() {
-  app.classList.add('App--active');
-  main.scrollIntoView();
-  sidebar.scrollIntoView({behavior: 'smooth'});
+async function openSidebar() {
+  app.classList.add('App--open');
+
+  if (!CSS.supports('scroll-initial-target', 'nearest')) {
+    app.scrollTo({left: sidebar.offsetWidth, behavior: 'instant'});
+    await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+  }
+
+  app.scrollTo({left: 0, behavior: 'auto'});
 }
 
 function closeSidebar(event) {
-  main.scrollIntoView({behavior: 'smooth'});
+  app.scrollTo({left: sidebar.offsetWidth, behavior: 'auto'});
 }
 
 function handleSidebarToggle() {
@@ -34,12 +39,15 @@ function handleSwipeDismiss() {
       const entry = entries.at(-1);
       if (isOpen && entry.intersectionRatio < visibleThreshold) {
         sidebar.scrollTo(0, 0);
-        main.removeAttribute('style');
-        app.classList.remove('App--active');
+        app.style.removeProperty('--scroll-progress');
+        app.classList.remove('App--open');
+        main.inert = false;
+        openSidebarBtn.setAttribute('aria-expanded', 'false');
         isOpen = false;
       }
       if (entry.intersectionRatio === 1) {
-        sidebar.focus();
+        main.inert = true;
+        openSidebarBtn.setAttribute('aria-expanded', 'true');
         isOpen = true;
       }
     },
@@ -48,16 +56,8 @@ function handleSwipeDismiss() {
   observer.observe(sidebar);
 }
 
-function handleFocusoutDismiss() {
-  sidebar.addEventListener('focusout', async (event) => {
-    if (isOpen && !sidebar.contains(event.relatedTarget)) {
-      closeSidebar();
-    }
-  });
-}
-
 function handleLightDismiss() {
-  app.addEventListener('click', async (event) => {
+  app.addEventListener('click', (event) => {
     if (isOpen && !sidebar.contains(event.target)) {
       closeSidebar();
     }
@@ -65,7 +65,7 @@ function handleLightDismiss() {
 }
 
 function handleEscDismiss() {
-  sidebar.addEventListener('keydown', async (event) => {
+  document.addEventListener('keydown', (event) => {
     if (isOpen && event.key === 'Escape') {
       closeSidebar();
     }
@@ -74,25 +74,19 @@ function handleEscDismiss() {
 
 function addScrollAnimationFallback() {
   app.addEventListener('scroll', (event) => {
-    const scrollRatio = app.scrollLeft / sidebar.offsetWidth;
-    main.style.setProperty('opacity', 0.5 + scrollRatio / 2);
-    main.style.setProperty('box-shadow', `inset 0 -2em 2em rgba(0,0,0,${0.5 - scrollRatio / 2})`);
-  }, {passive: true});
+    app.style.setProperty('--scroll-progress', app.scrollLeft / sidebar.offsetWidth);
+  });
 }
 
 function initSidebar() {
   handleSidebarToggle();
   handleSwipeDismiss();
-
-  // The following are not required to make the demo work, but they're
-  // good things to support in general when building a sidebar.
   handleLightDismiss();
-  // handleEscDismiss();
-  // handleFocusoutDismiss();
+  handleEscDismiss();
 
   // Conditionally add a fallback in the browser doesn't support
   // scroll animations to get the backdrop fade effect while scrolling.
-  if ( true || !CSS.supports('animation-timeline: scroll()')) {
+  if (!CSS.supports('animation-timeline: scroll()')) {
     addScrollAnimationFallback();
   }
 }

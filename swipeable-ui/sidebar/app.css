@@ -32,10 +32,8 @@
   }
 }
 
-body:has(.App--open) {
-  position: fixed;
-  width: 100%;
-  overflow: hidden;
+html:has(.App--open) {
+  overflow: clip;
 }
 
 .App-sidebar {
